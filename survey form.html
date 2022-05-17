@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+        table, th, td {
+            border: hidden;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+		body {
+			font-family: Verdana;
+			text-align: center;
+		}
+        form {
+			background-color: rgba(243, 236, 223, 0.979);
+			max-width: 1000px;
+			margin: 20px 200px;
+			padding: 20px 30px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 0%;
+		}
+        .vel{
+            max-width: 1300px;
+            border: none;
+            background-color: yellowgreen;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="vel">
+        <h1 style="padding-top: 35px;">Survey Form</h1><br>
+        <form action="/action_page.php">
+            <p>Let us know how we can improve freeCodeCamp</p>
+            <table>
+                <tr>
+                    <td style="text-align: right;"><label for="name">*Name:</label></td>
+                    <td style="text-align: left;" ><input style="margin-right: 12px;" type="text" id="name" placeholder="Enter your name" name="name"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;"><label for="email">*Email:</label></td>
+                    <td style="text-align: left;"><input style="margin-right: 12px;" type="text" id="email" placeholder="Enter your Email" name="email"></td>
+                </tr>
+                <tr>
+                    <td  style="text-align: right;"><label for="age">*Age:</label></td>
+                    <td style="text-align: left;"><input style="margin-right: 12px;" type="number" id="age" placeholder="Age" name="age"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Which option best describes your current role?</td>
+                    <td  style="text-align: left;">
+                        <select style="margin-right: 12px;" id="list" name="list">
+                        <option value="Student">Student</option>
+                        <option value="Professor">professor</option>
+                        <option value="Developers">Developers</option>
+                        <option value="Manager">Manager</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">*How likely is that you would recomment freeCodeCamp to a friend?</td>
+                    <td style="text-align: left;">
+                        <input style="margin-right: 12px;" type="radio" id="d" name="d" value="Definitely">
+                        <label for="d">Definitely</label><br><br>
+                        <input style="margin-right: 12px;" type="radio" id="m" name="m" value="Maybe">
+                        <label for="d">Maybe</label><br><br>
+                        <input style="margin-right: 12px;" type="radio" id="n" name="n" value="Not Sure">
+                        <label for="d">Not Sure</label><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">What do you really like most in FCC:</td>
+                    <td style="text-align:left;">
+                        <select style="margin-right: 300px;" id="list" name="list">
+                            <option value="Student">Select an option</option>
+                            <option value="Professor">Video</option>
+                            <option value="Developers">Article</option>
+                            <option value="Manager">Coding</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Things that should be improved in the future (check all that applyed):</td>
+                    <td style="text-align: left;">
+                        <input style="margin-right: 12px;" type="checkbox" id="f" name="f" value="Front-end Projects">
+                        <label for="f">Front-end Projects</label><br><br>
+                        <input style="margin-right: 12px;" type="checkbox" id="b" name="b" value="Back-end Projects">
+                        <label for="f">Back-end Projects</label><br><br>
+                        <input style="margin-right: 12px;" type="checkbox" id="d" name="d" value="Data Visualization">
+                        <label for="f">Data Visualization</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

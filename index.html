@@ -1,24 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Project</title>
-</head>
-<body>
-    <!-- Heading Tag -->
-    <h1>Divya</h1>
-    <h2>Software Engineer</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta quis veniam numquam nulla quam veritatis nemo impedit! Recusandae sapiente sunt reiciendis voluptates laboriosam, distinctio veniam numquam aliquam est quaerat.</p>
-    <!-- Inline Tag -->
-    <p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!--  symantic tags -->
+      <!-- Heading Tag -->
+      <h1>Divya</h1>
+      <h2>Software Engineer</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
+        quis veniam numquam nulla quam veritatis nemo impedit! Recusandae
+        sapiente sunt reiciendis voluptates laboriosam, distinctio veniam
+        numquam aliquam est quaerat.
+      </p>
+      <!-- Inline Tag -->
+      <nav>
         <a href="tel: 12334453">9797979797</a>
         <a href="mailto:sdivyabe@gmail.com">sdivyabe@gmail.com</a>
-        <a href="https://www.google.com/maps/place/Nagavara,+Bengaluru,+Karnataka/@13.0397013,77.5960594,14z/data=!3m1!4b1!4m5!3m4!1s0x3bae1782c59f1f99:0x536d89574c4f1216!8m2!3d13.0421565!4d77.6135776" target="_blank">Address</a>
-    </p>
-    <h3>Key Skills</h3>
-    <span></span>
-    <h3>Technical Skils</h3>
-</body>
+        <a
+          href="https://www.google.com/maps/place/Nagavara,+Bengaluru,+Karnataka/@13.0397013,77.5960594,14z/data=!3m1!4b1!4m5!3m4!1s0x3bae1782c59f1f99:0x536d89574c4f1216!8m2!3d13.0421565!4d77.6135776"
+          target="_blank"
+          >Address</a
+        >
+      </nav>
+    </header>
+    <section>
+      <h3>Key Skills</h3>
+      <p>
+        <span>Teamwork Skills</span>
+        <span>Creativity</span>
+        <span>Listener</span>
+      </p>
+    </section>
+    <section class="parent">
+      <h3 class="orange">Technical Skils</h3>
+      <p><strong>Languages:</strong>C, C++ and Java</p>
+      <p><strong>Operating Systems:</strong>Linux and Windows</p>
+      <p><strong>Web Technology:</strong>HTML, CSS, Java Script</p>
+    </section>
+    <section>
+      <h3>Professional Experience</h3>
+      <section>
+        <h4 class="orange">Job Title</h4>
+        <h4>Company Name</h4>
+        <ul>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            ducimus omnis quisquam cumque error fuga quo aut distinctio alias.
+            Asperiores vitae dolores corporis velit numquam accusantium earum
+            impedit? Laboriosam, deserunt.
+          </li>
+          <li class="orange">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+            assumenda nam id repudiandae, eligendi aperiam! Eius explicabo,
+            iusto earum atque quas quam sapiente asperiores accusamus a
+            repudiandae cumque! Corporis, laboriosam!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            rem accusamus a tempora, reiciendis placeat id officia asperiores
+            odit eligendi? Temporibus, dicta incidunt sed est nemo autem eos
+            minima sint.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4>Job Title</h4>
+        <h4>Company Name</h4>
+        <ul>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            iure. Vitae autem aspernatur illum tempora expedita enim aut quas
+            perferendis! Excepturi consectetur perspiciatis, fuga non nihil
+            inventore rerum alias cum!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            quia nihil asperiores, molestias dolor ipsum ex commodi quaerat
+            minus vel quos laboriosam odio quis, nobis et incidunt nemo,
+            pariatur voluptatum?
+          </li>
+        </ul>
+      </section>
+    </section>
+    <h3>Education</h3>
+    <table border="1px solid" cellpadding="5" cellspactin="1" width="80%">
+      <tr>
+        <th>Qualification</th>
+        <th>School/Collage</th>
+        <th>Year of Passing</th>
+        <th>Percentage/CGPA</th>
+      </tr>
+      <tr>
+        <td>B.Tech(CSE)</td>
+        <td>Kalasalingam Institute of Research and Technology</td>
+        <td>May2013</td>
+        <td>7.3</td>
+      </tr>
+      <tr>
+        <td>HSC</td>
+        <td rowspan="2">Govt.Hr.Sec.School</td>
+        <td rowspan="2">2006-2009</td>
+        <td>77%</td>
+      </tr>
+      <tr>
+        <td>SSLC</td>
+        <td>79%</td>
+      </tr>
+    </table>
+    <form>
+      <h3>Contuct Me</h3>
+      <div>
+        <label for="username">Name</label>
+        <input id="username" type="text" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" />
+      </div>
+      <div>
+        <label for="phNumber">Phone Number</label>
+        <input type="text" id="phNumber" />
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <input type="text" id="country" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+      </div>
+      <input type="submit" />
+    </form>
+    <footer>&copy; Divya</footer>
+  </body>
 </html>

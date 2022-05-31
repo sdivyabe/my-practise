@@ -7,21 +7,22 @@
     <title>Create WebPage</title>
     <script src="https://kit.fontawesome.com/1ce860d93d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <!-- Heading Tag -->
-    <header>
-        <div>
-            <h1>
+    <header id="header" class="fixed-top">
+        <div class="container align-between justify-content-between">
+            <h1 class="logo">
                 <a href="">Me & Family</a>
             </h1>
-            <nav>
+            <nav id="navbar" class="navebar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="ourStory.html">Our Story</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="Galary.html">Galary</a></li>
-                    <li><a href="#"><span>Drop Down</span> <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="navbar"><a class="active" href="index.html">Home</a></li>
+                    <li class="navbar"><a href="ourStory.html">Our Story</a></li>
+                    <li class="navbar"><a href="events.html">Events</a></li>
+                    <li class="navbar"><a href="Galary.html">Galary</a></li>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="fa-solid fa-chevron-down"></i></a>
                         <ul>
                             <li><a href="">Deep Story</a></li>
                             <li><a href="">Deep Story</a>
@@ -48,7 +49,7 @@
         <!-- ======= My & Family Section ======= -->
         <section>
             <div class="container">
-                <div>
+                <div class="mefamily">
                     <h2>My & Family</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto sint repudiandae, placeat asperiores dicta pariatur quia! Cum eligendi eius obcaecati vero excepturi cumque minus, dolorem temporibus laboriosam odio mollitia placeat.</p>
                 </div>
@@ -56,7 +57,7 @@
                     <div>
                         <img src="galary/1.jpg" />
                     </div>
-                    <div>
+                    <div class="abtUs">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                             magna aliqua.
